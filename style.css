@@ -1,0 +1,187 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background:url(./pexels-ena-marinkovic-3640930.jpg);
+  color:black;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color:fuchsia;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color:deeppink;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: black;
+  color:fuchsia;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: violet;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: plum;
+  background-image: linear-gradient( 45deg, #3e32a8,#e310c7, black);
+  padding: 20px;
+}
+
+.images{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #e31068;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  object-fit: cover;
+  background-size: cover;
+  background-image: linear-gradient( 45deg, #3e32a8,#e310c7, black);
+ 
+
+}
+.fakeimg2{
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  object-fit: cover;
+  background-size: cover;
+  background-image: linear-gradient( 45deg, #3e32a8,#e310c7, black);
+  background-image: url(livre.jpg);
+  
+}
+.fakeimg3{
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  object-fit: cover;
+  background-size: cover;
+  background-image: linear-gradient( 45deg, #3e32a8,#e310c7, black);
+  background-image: url(alloco.jpg);
+  
+}
+.fakeimg6 {
+  background: url(./ORDI\ 1.webp) ;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.FACK7{
+  background: url(./BELLE\ MA\ PREFEREE.jpg) ;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 300px;
+  text-align: center;
+}
+
+/* Footer */
+.foot {
+  background-image: linear-gradient(45deg, rgb(2, 4, 14), rgb(59, 29, 59),rgb(58, 58, 138));
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+div{
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.contact {
+  background-image: linear-gradient( 45deg,#e310c7, #3e32a8);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  text-decoration: azure;
+  text-transform: capitalize;
+
+}
+.FAMILY{background-image: linear-gradient( 45deg,#e31068, #325ba8);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  text-decoration: azure;
+  text-transform: capitalize;
+}
